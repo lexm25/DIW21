@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Sitúa la clase topleft dentro de su contenedor, a 15px de la parte superior y 30px desde la izquierda*/
+.topleft {
+    position: absolute;
+    font-size: 18px;
+    top: 15px;
+    left: 30px;
+}
+
+img {
+    position: relative;/*el padre debe quedarse con posicion relativa si es posible, pero tambien puede ser absolute*/
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://via.placeholder.com/1000x300" alt="Example img" width="1000" height="300">
+  <div class="topleft">Top Left</div>
+</div>
+
+</body>
+</html>
