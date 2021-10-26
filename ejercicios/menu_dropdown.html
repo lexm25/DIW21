@@ -1,0 +1,67 @@
+<style>
+  *{padding:0;margin:0}
+  li{
+    list-style-type:none;
+  }
+  .nav{
+    
+    margin:10px;
+    width:100%;
+    position:relative;
+  }
+  .nav > li{
+    position:relative;
+    display:inline-block;
+    padding:5px;
+    margin-right:10px;
+    border: 1px solid black;
+    
+  }
+  .nav a{
+    text-decoration:none;
+  }
+  .nav a:hover{
+    color:#aaa; 
+  }
+  .nav ul{  
+    position:absolute;
+    display:none;
+    top:30px;
+    background-color:green;
+  }
+  .nav ul a{
+    white-space: nowrap;
+  }
+  .nav li:hover ul {
+    display:block;
+  }
+</style>
+
+<ul class="nav">
+    <li>
+        <a href="#">Home</a>
+    </li>
+    <li>
+        <a href="#">About</a> 
+        <ul>
+            <li><a href="#">The product</a></li>
+            <li><a href="#">Meet the team</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Services</a>
+        <ul>
+            <li><a href="#">Sevice one</a></li>
+            <li><a href="#">Sevice two</a></li>
+            <li><a href="#">Sevice three</a></li>
+            <li><a href="#">Sevice four</a></li>
+        </ul>
+    </li>
+        
+  <li><a href="#">Contact</a>
+        <ul>
+            <li><a href="#">Out-of-hours</a></li>
+            <li><a href="#">Directions</a></li>
+        </ul>
+    </li>
+</ul>
