@@ -24,7 +24,8 @@ html {
 }
 
 .header {
-  background-color: #F0A500;
+  background: rgb(105,94,71);
+  background: linear-gradient(0deg, rgba(105,94,71,1) 0%, rgba(253,187,45,1) 100%);
   color: #ffffff;
   padding: 15px;
   text-align: center;
@@ -63,7 +64,8 @@ html {
 }
 
 .aside {
-  background-color: #082032;
+  background: rgb(8,32,50);
+  background: linear-gradient(0deg, rgba(8,32,50,1) 34%, rgba(22,125,203,1) 100%); 
   padding: 0px;
   color: #ffffff;
   text-align: center;
@@ -72,7 +74,8 @@ html {
 }
 
 .footer {
-  background-color: #617075;
+  background: rgb(136,136,136);
+  background: linear-gradient(0deg, rgba(136,136,136,1) 0%, rgba(0,0,0,1) 90%);  
   color: #ffffff;
   text-align: center;
   font-size: 12px;
@@ -142,7 +145,6 @@ html {
   overflow: hidden; 
   margin-right: 50px;
   margin-left: 50px;
-  
 }
 
 .galeria .item > img {
@@ -154,7 +156,7 @@ html {
 }
 
 .product{
-  position: relative;
+  display: flex;
   z-index: -1;
 }
 .product > img{
@@ -164,7 +166,7 @@ html {
 }
 
 .sale {
-  position:absolute;
+  position:relative;
   z-index: 1;
 
   right: 5px;
@@ -175,15 +177,32 @@ html {
   width: 50px;
 
 }
-
-/**/
+.textoOferta {
+  text-decoration: line-through;
+}
+.textoOferta span{
+  text-decoration: none;
+}
+del{
+  color: red;
+}
+.shop {
+  -webkit-box-shadow: 5px 5px 0px 0px #fbb215, 10px 10px 0px 0px #ffc13d, 15px 15px 0px 0px #ffd374, 20px 20px 0px 0px #ffe1a1, 0px 0px 28px 14px rgba(202,255,126,0); 
+box-shadow: 5px 5px 0px 0px #fbb215, 10px 10px 0px 0px #ffc13d, 15px 15px 0px 0px #ffd374, 20px 20px 0px 0px #ffe1a1, 0px 0px 28px 14px rgba(202,255,126,0);
+color: #000000;
+text-shadow: 2px 2px 0 #6d6d6d, 4px 4px 0 #9c9c9c;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
 </style>
 </head>
 <body>
 
 <div class="header">
   <a href="0_pagina_web.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/918px-NASA_logo.svg.png" width=10%></a>
-  <h1>WELCOME TO NASA</h1>
+  <h3>WELCOME TO NASA</h3>
 </div>
 
 <div class="row">
@@ -198,7 +217,7 @@ html {
   </div>
 
   <div class="col-6 col-s-9 main">
-    <h1>BUY A PIECE OF HISTORY</h1>
+    <h1 class="shop">BUY A PIECE OF HISTORY</h1>
     <div class="galeria">
       <div class="item">
         <div class="product">
@@ -206,22 +225,30 @@ html {
           <div class="sale"><img  src="https://www.onlygfx.com/wp-content/uploads/2020/05/sale-stamp-4.png"></div>
           <div style="clear: both;"></div>
         </div>
-        <p>19.99$</p>
+        <p><del>19.99$</del><span> 15.99$</span></p>
       </div>
 
       <div class="item">
-        <img src="https://todoastronautas.com/wp-content/uploads/2019/07/gorra-oficial-de-la-nasa-con-logo.jpg">
+        <div class="product">
+          <img src="https://todoastronautas.com/wp-content/uploads/2019/07/gorra-oficial-de-la-nasa-con-logo.jpg">
+        </div>
         <p>22.50$</p>
       </div>
 
       <div class="item">
-        <img src="https://todoastronautas.com/wp-content/uploads/2019/07/chaqueta-con-logotipo-oficial-de-la-nasa.jpg">
+        <div class="product">
+          <img src="https://todoastronautas.com/wp-content/uploads/2019/07/chaqueta-con-logotipo-oficial-de-la-nasa.jpg">
+        </div>
         <p>69.99$</p>
       </div>
-      
+
       <div class="item">
-        <img src="https://todoastronautas.com/wp-content/uploads/2019/09/mochilas-de-la-nasa.jpg">
-        <p>39.99$</p>
+        <div class="product">
+          <img src="https://todoastronautas.com/wp-content/uploads/2019/09/mochilas-de-la-nasa.jpg">
+          <div class="sale"><img  src="https://www.onlygfx.com/wp-content/uploads/2020/05/sale-stamp-4.png"></div>
+          <div style="clear: both;"></div>
+        </div>
+        <p><del>39.99$</del><span> 25.99$</span></p>
       </div>
     </div>
 </div>
