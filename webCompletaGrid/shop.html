@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* body {
+            margin: 40px;
+        } */
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .menu2 {
+            grid-area: menu2;
+        }
+
+        .content {
+            grid-area: content;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .main {
+            background-color: lightgoldenrodyellow;
+            color: #444;
+        }
+
+        .main {
+            display: grid;
+            grid-gap: 1em;
+            grid-template-areas:
+            "header"
+            "menu"
+            "content"
+            "menu2"
+            "footer"
+        }
+
+        @media only screen and (min-width: 500px)  {
+        .main {
+            grid-template-columns: 20% auto;
+            grid-template-areas:
+            "header   header"
+            "menu  content"
+            "menu2 menu2"
+            "footer   footer";
+        }
+        }
+
+        @media only screen and (min-width: 600px)   {
+            .main {
+            grid-gap: 20px;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-areas:
+            "header  header  header"
+            "menu content menu2"
+            "footer  footer  footer";
+            /* max-width: 600px; */
+            }
+        }
+
+        .box {
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 150%; 
+        }
+        .box menu{
+            background-color: white;
+        }
+
+        .header {
+            background: rgb(105,94,71);
+            background: linear-gradient(0deg, rgba(105,94,71,1) 0%, rgba(253,187,45,1) 100%);
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+        }
+        .header h1{
+            display: inline-block;
+        }
+
+        .footer {
+            display:grid;
+            background: rgb(136,136,136);
+            background: linear-gradient(0deg, rgba(136,136,136,1) 0%, rgba(0,0,0,1) 90%);  
+            color: #ffffff;
+            text-align: center;
+            font-size: 10px;
+            position: relative;
+            bottom: 0;
+            width: 99%;
+        }
+
+        .header h3{
+        display: inline-block;
+        }
+
+        .header img{
+        vertical-align: middle;
+        }
+
+        .menu2 {
+            color: #444;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: gray;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            
+        }
+
+        .menu li:hover {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #334756;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        
+        .menu li:hover {
+            background-color: #334756;
+        }
+        
+        .menu{
+            display: grid;
+            height: 30%;
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+        }
+        .main:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .main p{
+            font-size: 15px;
+        }
+        
+        del{
+            color: red;
+        }   
+        .content h1, .content p{
+            text-align: left;
+        }
+        .content h1{
+            width: 90%;
+        }
+
+        .content{
+            margin: auto;
+            background-color: #444;
+        }
+        .shop {
+            -webkit-box-shadow: 5px 5px 0px 0px #fbb215, 10px 10px 0px 0px #ffc13d, 15px 15px 0px 0px #ffd374, 20px 20px 0px 0px #ffe1a1, 0px 0px 28px 14px rgba(202,255,126,0); 
+            box-shadow: 5px 5px 0px 0px #fbb215, 10px 10px 0px 0px #ffc13d, 15px 15px 0px 0px #ffd374, 20px 20px 0px 0px #ffe1a1, 0px 0px 28px 14px rgba(202,255,126,0);
+            text-shadow: 2px 2px 0 #6d6d6d, 4px 4px 0 #9c9c9c;
+        }
+        .galeria .item > img {
+            width: 30%;
+        } 
+        .item {
+            float: left;
+            margin-bottom:15px; 
+            overflow: hidden; 
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .product{
+            display: flex;
+            position: relative;
+        }
+        .product > img{
+            float:left;
+            width: 300px;
+            height: 300px;
+        }
+        .sale {
+            position:absolute;
+            right: 5px;
+            top: 5px;
+        }
+        .sale > img{
+            float: none;
+            width: 50px;
+        }
+
+        .aside {
+            background: rgb(8,32,50);
+            background: linear-gradient(0deg, rgba(8,32,50,1) 34%, rgba(22,125,203,1) 100%); 
+            padding: 0px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        .imagenes img{
+            padding: 5px;
+            width: 10%;
+        }
+        .galeria{
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box header">
+            <a href="0principal.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/918px-NASA_logo.svg.png" width=10%></a>
+            <h3>WELCOME TO NASA</h3>
+        </div>
+        <div class="box menu">
+            <ul>
+                <li><a href="history.html">The History of Apolo XII</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="forms.html">Form</a></li>
+                <li><a href="0principal.html">Main Page</a></li>
+            </ul>
+        </div>
+        <div class="box menu2">
+            <div class="aside">
+              <h2>FOLLOW US ON SOCIAL MEDIA</h2>
+            <div class="imagenes">
+              <a href="https://twitter.com/NASA" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-1-1.png"></a>
+              <a href="https://es-es.facebook.com/NASA/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"></a>
+              <a href="https://www.instagram.com/nasa/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Instagram-Icon.png"></a>
+            </div>
+            </div>
+        </div>
+        <div class="box content">
+            <div class="row">            
+                  <h1 class="shop">BUY A PIECE OF HISTORY</h1>
+                  <div class="galeria">
+                    <div class="item">
+                      <div class="product">
+                        <img src="https://cdn.palbincdn.com/users/37276/images/img_208632_ba46f653b79439727170c58b80f66a55_1-1629217374.jpg.thumb">
+                        <div class="sale"><img  src="https://www.onlygfx.com/wp-content/uploads/2020/05/sale-stamp-4.png"></div>
+                        <div style="clear: both;"></div>
+                      </div>
+                      <p><del>19.99$</del><span> 15.99$</span></p>
+                    </div>
+              
+                    <div class="item">
+                      <div class="product">
+                        <img src="https://todoastronautas.com/wp-content/uploads/2019/07/gorra-oficial-de-la-nasa-con-logo.jpg">
+                      </div>
+                      <p>22.50$</p>
+                    </div>
+              
+                    <div class="item">
+                      <div class="product">
+                        <img src="https://todoastronautas.com/wp-content/uploads/2019/07/chaqueta-con-logotipo-oficial-de-la-nasa.jpg">
+                      </div>
+                      <p>69.99$</p>
+                    </div>
+              
+                    <div class="item">
+                      <div class="product">
+                        <img src="https://todoastronautas.com/wp-content/uploads/2019/09/mochilas-de-la-nasa.jpg">
+                        <div class="sale"><img  src="https://www.onlygfx.com/wp-content/uploads/2020/05/sale-stamp-4.png"></div>
+                        <div style="clear: both;"></div>
+                      </div>
+                      <p><del>39.99$</del><span> 25.99$</span></p>
+                    </div>
+                  </div>
+            </div>
+    </div>
+    <div class="box footer">
+        <p>If you need more information about this page, please contact with us in the following link</p>
+        <div><a href="https://www.nasa.gov/" target="_blank">Contact</a>
+            <a href="https://www.nasa.gov/" target="_blank">Support</a></div>
+    </div>
+</body>
+</html>
