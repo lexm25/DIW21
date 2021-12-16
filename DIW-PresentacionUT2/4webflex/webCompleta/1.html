@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FULL WEB EXAMPLE</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  
+  .header {
+    background: rgb(105,94,71);
+    background: linear-gradient(0deg, rgba(105,94,71,1) 0%, rgba(253,187,45,1) 100%); 
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+  }
+  .header h1{
+    display: inline-block;
+  }
+  
+  .header img{
+    vertical-align: middle;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: gray;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .menu li:hover {
+      padding: 8px;
+      margin-bottom: 7px;
+      background-color: #334756;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .menu li:hover {
+    background-color: #334756;
+  }
+  
+  .aside {
+    background: rgb(8,32,50);
+    background: linear-gradient(0deg, rgba(8,32,50,1) 34%, rgba(22,125,203,1) 100%); 
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .footer {
+    background: rgb(136,136,136);
+  background: linear-gradient(0deg, rgba(136,136,136,1) 0%, rgba(0,0,0,1) 90%);
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+  }
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  
+  .imagenes img{
+      padding: 5px;
+      width: 10%;
+  }
+  
+  .menu a{
+    text-decoration: none;
+  }
+  .astronaut{
+    font-size: 10px;
+  }
+
+  a{
+  text-decoration: none;
+  color: white;
+}
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <a href="0_pagina_web.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/918px-NASA_logo.svg.png" width=10%></a>
+  <h1>WELCOME TO NASA</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li><a href="0_pagina_web.html">Main Page</a></li>
+      <li><a href="2.html">Gallery</a></li>
+      <li><a href="3.html">News</a></li>
+      <li><a href="forms.html">Form</a></li>
+      <li><a href="4.html">Shop</a></li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h2>NATIONAL AERONAUTICS AND SPACE ADMINISTRATION</h2>
+    <h3>APOLLO XI</h3>
+    <p>Apollo 11 (July 16–24, 1969) was the spaceflight that first landed humans on the Moon. Commander Neil Armstrong and lunar module pilot Buzz Aldrin formed the American crew that landed the Apollo Lunar Module Eagle on July 20, 1969, at 20:17 UTC. Armstrong became the first person to step onto the lunar surface six hours and 39 minutes later on July 21 at 02:56 UTC; Aldrin joined him 19 minutes later. They spent about two and a quarter hours together outside the spacecraft, and collected 47.5 pounds (21.5 kg) of lunar material to bring back to Earth. Command module pilot Michael Collins flew the Command Module Columbia alone in lunar orbit while they were on the Moon's surface. Armstrong and Aldrin spent 21 hours, 36 minutes on the lunar surface, at a site they had named Tranquility Base upon landing, before lifting off to rejoin Columbia in lunar orbit.
+
+      Apollo 11 was launched by a Saturn V rocket from Kennedy Space Center on Merritt Island, Florida, on July 16 at 13:32 UTC, and it was the fifth crewed mission of NASA's Apollo program. The Apollo spacecraft had three parts: a command module (CM) with a cabin for the three astronauts, the only part that returned to Earth; a service module (SM), which supported the command module with propulsion, electrical power, oxygen, and water; and a lunar module (LM) that had two stages—a descent stage for landing on the Moon and an ascent stage to place the astronauts back into lunar orbit.
+      
+      After being sent to the Moon by the Saturn V's third stage, the astronauts separated the spacecraft from it and traveled for three days until they entered lunar orbit. Armstrong and Aldrin then moved into Eagle and landed in the Sea of Tranquility on July 20. The astronauts used Eagle's ascent stage to lift off from the lunar surface and rejoin Collins in the command module. They jettisoned Eagle before they performed the maneuvers that propelled Columbia out of the last of its 30 lunar orbits onto a trajectory back to Earth. They returned to Earth and splashed down in the Pacific Ocean on July 24 after more than eight days in space.
+      
+      Armstrong's first step onto the lunar surface was broadcast on live TV to a worldwide audience. He described the event as "one small step for man, one giant leap for mankind." Apollo 11 effectively proved US victory in the Space Race to demonstrate spaceflight superiority, by fulfilling a national goal proposed in 1961 by President John F. Kennedy, "before this decade is out, of landing a man on the Moon and returning him safely to the Earth."
+      </p>
+      <h4>Who was this astronauts?</h4>
+      <table border=1px>
+        <th>Position</th><th>Astronaut</th>
+        <tr>
+          <td>Commander</td>
+          <td>Neil Armstrong</td>
+        </tr>
+        <tr>
+          <td>Lunar Module Pilot</td>
+          <td>Buzz Aldrin</td>
+        </tr>
+        <tr>
+          <td>Command Module Pilot</td>
+          <td>Michael Collins</td>
+        </tr>
+      </table>
+      <br>
+      <img src="http://c.files.bbci.co.uk/E80A/production/_107820495_14af9881-ccef-4e43-bbfa-d680d15dad79.jpg">
+      <p class="astronaut">From left to right: Neil Armstrong, Michael Collins and Buzz Aldrin</p>
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>FOLLOW US ON SOCIAL MEDIA</h2>
+    <div class="imagenes">
+      <a href="https://twitter.com/NASA" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-1-1.png"></a>
+      <a href="https://es-es.facebook.com/NASA/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"></a>
+      <a href="https://www.instagram.com/nasa/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Instagram-Icon.png"></a>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>If you need more information about this page, please contact with us in the following link</p>
+  <a href="https://www.nasa.gov/" target="_blank">Contact</a>
+  <a href="https://www.nasa.gov/stem" target="_blank">Support</a>
+</div>
+
+</body>
+</html>

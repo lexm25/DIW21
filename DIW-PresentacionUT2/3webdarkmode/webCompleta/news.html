@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FULL WEB EXAMPLE</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background: rgb(105,94,71);
+  background: linear-gradient(0deg, rgba(105,94,71,1) 0%, rgba(253,187,45,1) 100%);
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+.header h1{
+  display: inline-block;
+}
+
+.header img{
+  vertical-align: middle;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: gray;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #334756;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+  background-color: #334756;
+}
+
+.aside {
+  background: rgb(8,32,50);
+  background: linear-gradient(0deg, rgba(8,32,50,1) 34%, rgba(22,125,203,1) 100%); 
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background: rgb(136,136,136);
+  background: linear-gradient(0deg, rgba(136,136,136,1) 0%, rgba(0,0,0,1) 90%);
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.imagenes img{
+    padding: 5px;
+    width: 10%;
+}
+
+.menu a{
+  text-decoration: none;
+}
+.credits{
+  font-size: 10px;
+}
+.jupiter{
+  text-align: center;
+}
+.jupiter h1, p{
+  text-align: left;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+img{
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="0_pagina_web.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/918px-NASA_logo.svg.png" width=10%></a>
+  <h1>WELCOME TO NASA</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li><a href="history.html">The History of Apolo XII</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="forms.html">Form</a></li>
+      <li><a href="shop.html">Shop</a></li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9 jupiter">
+    <img src="https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/1-pia24818_-_jupiter_bands_leigh_slide1.png?itok=Yn6fJpA6" width=60%>
+    <p class="credits">Credits: International Gemini Observatory/NOIRLab/NSF/AURA/NASA/ESA, M.H. Wong and I. de Pater (UC Berkeley) et al.</p>
+    <h1>NASA’s Juno: Science Results Offer First 3D View of Jupiter Atmosphere</h1>
+    
+    <p>New findings from NASA’s Juno probe orbiting Jupiter provide a fuller picture of how the planet’s distinctive and colorful atmospheric features offer clues about the unseen processes below its clouds. The results highlight the inner workings of the belts and zones of clouds encircling Jupiter, as well as its polar cyclones and even the Great Red Spot.
+
+      Researchers published several papers on Juno’s atmospheric discoveries today in the journal Science and the Journal of Geophysical Research: Planets. Additional papers appeared in two recent issues of Geophysical Research Letters.
+      
+      “These new observations from Juno open up a treasure chest of new information about Jupiter’s enigmatic observable features,” said Lori Glaze, director of NASA’s Planetary Science Division at the agency’s headquarters in Washington. “Each paper sheds light on different aspects of the planet’s atmospheric processes – a wonderful example of how our internationally-diverse science teams strengthen understanding of our solar system.”
+      
+      Juno entered Jupiter’s orbit in 2016. During each of the spacecraft’s 37 passes of the planet to date, a specialized suite of instruments has peered below its turbulent cloud deck.
+      
+      “Previously, Juno surprised us with hints that phenomena in Jupiter’s atmosphere went deeper than expected,” said Scott Bolton, principal investigator of Juno from the Southwest Research Institute in San Antonio and lead author of the Journal Science paper on the depth of Jupiter’s vortices. “Now, we’re starting to put all these individual pieces together and getting our first real understanding of how Jupiter’s beautiful and violent atmosphere works – in 3D.”</p>
+
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>FOLLOW US ON SOCIAL MEDIA</h2>
+    <div class="imagenes">
+      <a href="https://twitter.com/NASA" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-1-1.png"></a>
+      <a href="https://es-es.facebook.com/NASA/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"></a>
+      <a href="https://www.instagram.com/nasa/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Instagram-Icon.png"></a>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>If you need more information about this page, please contact with us in the following link</p>
+  <a href="https://www.nasa.gov/" target="_blank">Contact</a>
+  <a href="https://www.nasa.gov/stem" target="_blank">Support</a>
+</div>
+
+</body>
+</html>
