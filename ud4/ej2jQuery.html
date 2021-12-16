@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+var contador = 1;
+$(document).ready(function(){
+  $(".cuadrado").click(function(){
+    $("div").animate({left: Math.random()*(1000-250)+250});
+    $("div").animate({top: Math.random()*(1000-250)+250});
+    $("div").animate({height: Math.random()*(250-150)+150});
+    $("div").animate({width: Math.random()*(250-150)+150});
+
+    $("#text").text(contador);
+    contador++;
+  });
+});
+
+</script> 
+</head>
+<body>
+    <div style="background:#98bf21;height:100px;width:100px;position:absolute;" class="cuadrado"></div>
+    <p id="text"></p>
+</body>
+</html>

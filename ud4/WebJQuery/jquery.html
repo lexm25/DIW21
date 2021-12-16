@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Document_files/font-awesome.css">
+    <script src="Document_files/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    .menu {
+        overflow: hidden;
+        background-color: cadetblue;
+    }
+
+    .menu a {
+        float: left;
+        display: block;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .menu a:hover {
+        background-color: coral;
+        color: black;
+    }
+
+    .menu a.active {
+        background-color: crimson;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    .menu .bars {
+        display: none;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+        .menu a:not(:first-child) {display: none;}
+        .menu a.bars {
+            float: right;
+            display: block;
+        }
+        .menu.responsive {position: relative;}
+        .menu.responsive .bars {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .menu.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+    </style>
+    <header>
+        <img src="Document_files/Cabecera-web-copia-3.png">
+    </header>
+    <div class="menu" id="menuWeb" style="">
+        <a href="#" class="active">Inicio</a>
+        <a href="#">Contacto</a>
+        <a href="#" class="bars">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="menu responsive" id="menuWebResponsive" style="display: none;">
+        <a href="#" class="active">Inicio</a>
+        <a href="#">Contacto</a>
+        <a href="#" class="bars">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Alias impedit, minima debitis id dolores aut voluptatibus natus atque 
+        sunt. Fugiat ducimus, minima fuga vero placeat cupiditate dolorum sunt. 
+        Corporis, veniam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Officia tempora recusandae nulla saepe quia necessitatibus sapiente 
+        numquam itaque? Unde quo accusantium corporis. Dicta voluptas architecto
+        odit, dolor placeat ut optio.</p>
+    </div>
+    <script>
+
+    $(document).ready(function(){
+        var responsive = true;
+        $("#menuWebResponsive").hide();
+        $(".bars").click(function(){
+            if (responsive) {
+                $("#menuWebResponsive").show(2000);
+                $("#menuWeb").hide();
+                responsive = false;
+            } else {
+                $("#menuWebResponsive").hide(2000);
+                $("#menuWeb").show(2000);
+                responsive = true;
+            }
+        });
+    });
+    </script>
+</body>
+</html>
