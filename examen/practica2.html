@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        button {
+            background: none;
+            border: none;
+        }
+
+        video {
+            width: 320;
+            height: 240;
+        }
+
+        .standard,
+        .minirepro,
+        .fullscreen {
+            font-size: 40px;
+        }
+
+        .standard:hover {
+            color: indianred;
+        }
+
+        .minirepro:hover {
+            color: indianred;
+        }
+
+        .fullscreen:hover {
+            color: indianred;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $(".fullscreen").click(function () {
+                $("video").animate({ width: "100%" });
+                $("video").animate({ height: "100%" });
+            });
+        });
+
+        $(document).ready(function () {
+            $(".standard").click(function () {
+                $("video").animate({ width: "30%" });
+                $("video").animate({ height: "30%" });
+            });
+        });
+
+        $(document).ready(function () {
+            $(".minirepro").click(function () {
+                $("video").animate({ width: "300px" });
+                $("video").animate({ height: "50%" });
+            });
+        });
+    </script>
+    <video controls class="video">
+        <source src="Kobe Bryant 81PT.mp4" type="video/mp4">
+    </video>
+    <div class="botones">
+        <button class="standard"><i class="fas fa-arrows-alt"></i></button>
+        <label>standard</label>
+        <button class="minirepro"><i class="fas fa-angle-double-down"></i></button>
+        <label>minirepro</label>
+        <button class="fullscreen"><i class="fas fa-angle-double-up"></i></button>
+        <label>fullscreen</label>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style></style>
+<script> 
+var contador = 1;
+$(document).ready(function(){
+  $(".pelota").click(function(){
+    $("div").animate({left: Math.random()*(1000-250)+250});
+    $("div").animate({top: Math.random()*(1000-250)+250});
+
+
+  });
+});
+
+</script> 
+</head>
+<body>
+    <div >
+        <img src="pelota.png" class="pelota">
+    </div>
+    <p id="text"></p>
+    
+</body>
+</html>

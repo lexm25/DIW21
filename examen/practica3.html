@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            font-size: 50px;
+            background: none;
+            border: none;
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            $(".emote").click(function () {
+                $(".emote").addClass("order");
+            });
+        });
+    </script>
+    <div class="content">
+        <button class="emote">&#128514;</button>
+        <button class="emote">&#128155;</button>
+        <button class="emote">&#128121;</button>
+        <button class="emote">&#128546;</button>
+        <button class="emote">&#128125;</button>
+        <button class="emote">&#128170;</button>
+        <button class="emote">&#129409;</button>
+        <button class="emote">&#127770;</button>
+        <button class="emote">&#10067;</button>
+        <button class="emote">&#128640;</button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+        margin: 40px;
+        }
+        .wrapper {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-gap: 10px;
+        background-color: #fff;
+        color: #444;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        .box {
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+        text-align: center;
+        height: 150px;
+        border: 2px;
+        }
+        .box:hover{
+            opacity: 15%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $(".imagen").click(function(){
+                $(this).animate({height: 0});
+            });
+        });
+    </script>
+    <div class="wrapper">
+        <div class="box a"><img src="pelota.png" class="imagen">Uno</div>
+        <div class="box b"><img src="pelota.png" class="imagen">dos</div>
+        <div class="box c"><img src="pelota.png" class="imagen">tres</div>
+        <div class="box d"><img src="pelota.png" class="imagen">cuatro</div>
+        <div class="box e"><img src="pelota.png" class="imagen">cinco</div>
+        <div class="box f"><img src="pelota.png" class="imagen">seis</div>
+        <div class="box g"><img src="pelota.png" class="imagen">siete</div>
+        <div class="box h"><img src="pelota.png" class="imagen">ocho</div>
+        <div class="box i"><img src="pelota.png" class="imagen">nueve</div>
+    </div>
+</body>
+</html>

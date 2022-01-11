@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Cambiar el color de una etiqueta con jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+		background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+    </div>
+    <script>
+	$(".box").click(function(){
+        $('.box').css('background', 'hsl('+ randomInterval(0,359)+','+ randomInterval(0,100)+'%,'+ randomInterval(0,100) +'%)');
+      });
+	  function randomInterval(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+    </script>
+  </body>
+</html>
