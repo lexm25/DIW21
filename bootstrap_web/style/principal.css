@@ -1,0 +1,17 @@
+#logo img{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+  }
+  body {
+  background-image: url("https://i.blogs.es/3a7007/god-of-war/1366_2000.jpeg");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  }
+  .navbar{
+    background-image: url("https://www.oxygenna.com/wp-content/uploads/2014/09/bg-1-blog.jpg");
+    
+  }
