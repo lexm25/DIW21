@@ -12,13 +12,13 @@
     type: 'line',
     data: {
       labels: [
-        'Sunday',
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday'
+        'Enero',
+        'Febrero',
+        'Marzo',
+        'Abril',
+        'Mayo',
+        'Junio',
+        'Julio'
       ],
       datasets: [{
         data: [
@@ -32,9 +32,9 @@
         ],
         lineTension: 0,
         backgroundColor: 'transparent',
-        borderColor: '#007bff',
+        borderColor: '#070a22',
         borderWidth: 4,
-        pointBackgroundColor: '#007bff'
+        pointBackgroundColor: '#343a40'
       }]
     },
     options: {
