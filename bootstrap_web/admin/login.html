@@ -35,18 +35,22 @@
         border-color: black;
         opacity: 80%;
       }
+      #pass{
+        text-decoration: none;
+        color: #070a22;
+      }
 
 
     </style>
     
     <!-- Custom styles for this template -->
-    <link href="login.css" rel="stylesheet">
+    <link href="../style/login.css" rel="stylesheet">
   </head>
   <body class="text-center">
     
   <main class="form-signin">
     <form>
-      <a href="../../page/principal.html"><img class="mb-4" src="../../images/cru.png" width="30%"></a>
+      <a href="../page/principal.html"><img class="mb-4" src="../images/cru.png" width="30%"></a>
       <h1 class="h3 mb-3 fw-normal">Iniciar Sesión</h1>
 
       <div class="form-floating">
@@ -58,12 +62,15 @@
         <label for="floatingPassword">Contraseña</label>
       </div>
 
+      <div class="row">
+        <a href="../admin/password.html" id="pass">¿Has olvidado la contraseña?</a>
+      </div>
       <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="remember-me"> Recuérdame
         </label>
       </div>
-      <a href="../dashboard/dashboard.html" class="w-100 btn btn-lg btn-primary" id="login">Entrar</a>
+      <a href="../admin/charts.html" class="w-100 btn btn-lg btn-primary" id="login">Entrar</a>
       <p class="mt-1 mb-1 text-white">&copy; 2021–2022</p>
     </form>
   </main>
